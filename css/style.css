@@ -1,0 +1,266 @@
+/* Custom CSS for TheBestPhonePlans.com */
+
+:root {
+  --primary: #ff6a00;
+  --primary-dark: #e05f00;
+  --primary-light: #ff884d;
+  --dark: #212529;
+  --light: #f8f9fa;
+  --gray: #6c757d;
+  --success: #28a745;
+  --info: #17a2b8;
+  --warning: #ffc107;
+  --danger: #dc3545;
+}
+
+/* Override Bootstrap primary color */
+.bg-primary {
+  background-color: var(--primary) !important;
+}
+
+.text-primary {
+  color: var(--primary) !important;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: var(--primary-dark) !important;
+  border-color: var(--primary-dark) !important;
+}
+
+.btn-outline-primary {
+  color: var(--primary);
+  border-color: var(--primary);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus,
+.btn-outline-primary:active {
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+}
+
+.border-primary {
+  border-color: var(--primary) !important;
+}
+
+/* Typography */
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.5;
+  color: var(--dark);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.display-4 {
+  font-weight: 700;
+}
+
+/* Logo */
+.logo-text {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Layout Components */
+.hero-section {
+  padding: 5rem 0;
+  background-color: var(--light);
+}
+
+.cta-section {
+  background-color: var(--primary);
+}
+
+.carrier-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carrier-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+}
+
+.plan-card {
+  transition: transform 0.3s ease;
+}
+
+.plan-card:hover {
+  transform: translateY(-5px);
+}
+
+.carrier-logo {
+  max-height: 60px;
+  width: auto;
+  margin-bottom: 1rem;
+}
+
+.carrier-logo-large {
+  max-height: 100px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.mvno-logos img {
+  max-height: 40px;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+.mvno-logos a:hover img {
+  transform: scale(1.1);
+}
+
+/* Cards & Sections */
+.card {
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.card-header {
+  font-weight: 600;
+}
+
+/* Images */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+/* Tables */
+.table-primary {
+  background-color: rgba(var(--primary), 0.1);
+}
+
+/* Feature Icons */
+.feature-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+  color: var(--primary);
+  border-radius: 0.75rem;
+}
+
+/* Footer */
+footer {
+  font-size: 0.9rem;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Affiliate Disclaimer */
+.affiliate-disclaimer {
+  line-height: 1.4;
+  opacity: 0.8;
+}
+
+/* Blog Styles */
+.author-info img {
+  object-fit: cover;
+}
+
+.post-content {
+  line-height: 1.7;
+}
+
+.post-content h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.post-content h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.post-content ul,
+.post-content ol {
+  margin-bottom: 1.5rem;
+}
+
+.post-content img {
+  max-width: 100%;
+  height: auto;
+  margin: 1.5rem 0;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding: 3rem 0;
+  }
+  
+  .display-4 {
+    font-size: 2.5rem;
+  }
+  
+  .carrier-logo-large {
+    max-height: 70px;
+  }
+}
+
+/* Carrier-specific header colors */
+.carrier-header.verizon {
+  background-color: #CD040B;
+}
+
+.carrier-header.tmobile {
+  background-color: #E20074;
+}
+
+.carrier-header.att {
+  background-color: #00A8E0;
+}
+
+.carrier-header.boost {
+  background-color: #FF8200;
+}
+
+.carrier-header.mint {
+  background-color: #15B281;
+}
+
+.carrier-header.visible {
+  background-color: #FF0037;
+}
+
+.carrier-header.cricket {
+  background-color: #4CAF50;
+}
+
+.carrier-header.googlefi {
+  background-color: #1A73E8;
+}
